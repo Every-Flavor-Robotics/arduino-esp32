@@ -22,7 +22,7 @@ static const uint8_t LED_BUILTIN = 44;
 static const uint8_t LED_STATUS = 43;
 
 // TODO: Confirm these are correct
-static const uint8_t TX = 42;
+static const uint8_t TX = 4;
 static const uint8_t RX = 43;
 
 // SPI
