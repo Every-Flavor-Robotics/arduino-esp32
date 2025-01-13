@@ -6,29 +6,29 @@
 #define USB_VID 0x303A
 #define USB_PID 0x1001
 
-#define DRIVER_VOLTAGE_LIMIT 17.0f
-#define DRIVER_CURRENT_LIMIT 2.0f
+#define DRIVER_VOLTAGE_LIMIT 15.0f
+#define DRIVER_CURRENT_LIMIT 1.5f
 
 // A flag to indicate a GPIO pin is not set
 #define MOTORGO_GPIO_NOT_SET 0xFF
 
 // Built-in LED available to user
-static const uint8_t LED_BUILTIN = 44;
+static const uint8_t LED_BUILTIN = 42;
 // backward compatibility
 #define BUILTIN_LED LED_BUILTIN
 #define LED_BUILTIN LED_BUILTIN
 
 // Status LED
-static const uint8_t LED_STATUS = 43;
+static const uint8_t LED_STATUS = 41;
+#define STATUS_LED LED_STATUS
 
-// TODO: Confirm these are correct
-static const uint8_t TX = 4;
-static const uint8_t RX = 43;
+static const uint8_t TX = 43;
+static const uint8_t RX = 44;
 
 // SPI
-static const uint8_t MOSI = 48;
-static const uint8_t MISO = 39;
-static const uint8_t SCK = 40;
+static const uint8_t MOSI = 35;
+static const uint8_t MISO = 48;
+static const uint8_t SCK = 47;
 static const uint8_t SS = 21;
 
 // Qwiic
@@ -63,7 +63,5 @@ static const uint8_t M3_EN = 8;
 static const uint8_t CH4_ENC_CS = 9;
 static const uint8_t M4_PH = 12;
 static const uint8_t M4_EN = 11;
-
-// Analog pins?
 
 #endif /* Pins_Arduino_h */
