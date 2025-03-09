@@ -15,9 +15,9 @@ on:
           - "info"
           - "debug"
           - "verbose"
-  schedule:
-    # Every Sunday at 2:00 UTC run a build with verbose log level
-    - cron: "0 2 * * SUN"
+  # schedule:
+  #   # Every Sunday at 2:00 UTC run a build with verbose log level
+  #   - cron: "0 2 * * SUN"
   push:
     branches:
       - master
@@ -255,7 +255,7 @@ jobs:
             "esp32c3",
             "esp32c6",
             "esp32h2",
-            "esp32p4"
+            "esp32p4",
           ]
     container: espressif/idf:${{ matrix.idf_ver }}
     steps:
